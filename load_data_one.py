@@ -40,7 +40,7 @@ def load_mfcc_from_file(path):
     for x in range(12, size - 12):
         phone = data[x][2]
         if phone in target :
-            window = fuck_keras_d3_to_d4(data[x-12:x+13, 3:43])
+            window = stupid_keras_d3_to_d4(data[x-12:x+13, 3:43])
             train_x.append(window)
             train_y.append(target_array(phone))
 
@@ -53,14 +53,14 @@ def load_mfcc_from_file_for_test(path):
     for x in range(12, size - 12):
         phone = data[x][2]
         if phone in target :
-            window = fuck_keras_d3_to_d4(data[x-12:x+13, 3:43])
+            window = stupid_keras_d3_to_d4(data[x-12:x+13, 3:43])
             test_x.append(window)
             test_y.append(target_array(phone))
 
 
 
 
-def fuck_keras_d3_to_d4(data):
+def stupid_keras_d3_to_d4(data):
     data4 = np.zeros((25, 40, 1))
     for i in range(0, 25):
         for j in range(0, 40):
@@ -69,19 +69,9 @@ def fuck_keras_d3_to_d4(data):
 
 
 
+
+
 path = "example_timit_data/TEST3"
-pattern = os.path.join(path, "*/*/*.mfcc")
-files = glob.glob(pattern)
-
-count = 0
-for f in files:
-    print(count, "  >>> processing ", f)
-    load_mfcc_from_file(f)
-    count += 1
-
-
-
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST3/"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
