@@ -11,7 +11,7 @@
 python predict.py
 ```
 
-![result](https://github.com/summer2019_cnn_for_phone_recognition/blob/master/result.png)
+![result](https://github.com/yousongzhang/summer2019_cnn_for_phone_recognition/blob/master/result.png)
 
 ## Data
 
