@@ -67,7 +67,7 @@ def fuck_keras_d3_to_d4(data):
 
 
 
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TRAIN2/"
+path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST2/"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
@@ -79,7 +79,7 @@ for f in files:
 
 
 
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST2/"
+path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TRAIN2/"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 

@@ -90,6 +90,6 @@ def train(pic_folder, weight_folder):
 
 if __name__ == '__main__':
     train(
-        pic_folder=r'D:\Workspace\githome\CNN_keras\data',
-        weight_folder=r'D:\Workspace\githome\CNN_keras\models'
+        pic_folder=r'',
+        weight_folder=r'CNN_keras_models'
     )
