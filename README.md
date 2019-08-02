@@ -1,16 +1,17 @@
 ## Acknowledge
 1. [mapped from 61 to 48 phonemes] https://github.com/awni/speech
 2. [input format for CNN] https://cs224d.stanford.edu/reports/SongWilliam.pdf
+3. [CNN model] https://github.com/skyduy/CNN_keras
 
 
 
-## Quickly test (Timit corpus not required)
+## Quickly test (TIMIT corpus not required)
 
 ```
 python predict.py
 ```
 
-![result](https://github.com/summer2019_cnn_for_phone_recognition/result.png)
+![result](https://github.com/summer2019_cnn_for_phone_recognition/blob/master/result.png)
 
 ## Data
 
