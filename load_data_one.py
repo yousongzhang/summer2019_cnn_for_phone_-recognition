@@ -69,7 +69,7 @@ def fuck_keras_d3_to_d4(data):
 
 
 
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST3/"
+path = "example_timit_data/TEST3"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
@@ -96,7 +96,3 @@ print("shape of train_x" ,np.shape(train_x))
 print("shape of train_y" ,np.shape(train_y))
 print("shape of test_x" ,np.shape(test_x))
 print("shape of test_y" ,np.shape(test_y))
-
-
-
-

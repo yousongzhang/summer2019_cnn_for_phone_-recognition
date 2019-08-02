@@ -66,26 +66,28 @@ def fuck_keras_d3_to_d4(data):
     return data4
 
 
-
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST2/"
+# path for train
+path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TEST/"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
 count = 0
+total = len(files)
 for f in files:
-    print(count, "  >>> processing ", f)
+    print(count,"/", total, "  >>> processing ", f)
     load_mfcc_from_file(f)
     count += 1
 
 
-
+# path for test
 path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TRAIN2/"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
 count = 0
+total = len(files)
 for f in files:
-    print(count, "  >>> processing test ", f)
+    print(count,"/", total, "  >>> processing test ", f)
     load_mfcc_from_file_for_test(f)
     count += 1
 
