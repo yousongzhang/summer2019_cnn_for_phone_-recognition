@@ -72,4 +72,3 @@ python predict.py
 
 
 [Kaldi TIMIT recipe]: https://github.com/kaldi-asr/kaldi/blob/master/egs/timit/s5/conf/phones.60-48-39.map
-[LDC93S1]: https://catalog.ldc.upenn.edu/ldc93s1
