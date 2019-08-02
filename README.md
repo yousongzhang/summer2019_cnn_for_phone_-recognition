@@ -36,7 +36,7 @@ CNN output data: vector(48)
 
 ## Prepare MFCC Data
 
-Once you have the TIMIT data downloaded, run
+Once you have the TIMIT data downloaded, edit timit.py file. set TIMIT_PATH
 
 ```
 python data_prep.py
@@ -44,7 +44,7 @@ python data_prep.py
 
 This script will convert the `.WAV` and `.PHE` files to `.mfcc`. The data is mapped from 61 to 48 phonemes in mfcc files.
 
-Change the path in `data_prep.py`, run twice, one for training data, one for test data
+
 
 
 

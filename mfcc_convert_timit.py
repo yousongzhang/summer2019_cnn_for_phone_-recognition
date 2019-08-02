@@ -28,7 +28,7 @@ def load_phone_map():
 
 
 
-path = "/Users/zhangyousong/Downloads/data/lisa/data/timit/raw/TIMIT/TRAIN/DR1/FCJF0/SA1.WAV"
+path = ""
 input_phn = ""
 output = ""
 output_phn = ""
