@@ -28,12 +28,12 @@ def evalution():
     x_test_tensor = torch.from_numpy(x_test).float()
     x_test_tensor = x_test_tensor.to(device)
     y_test_tensor = torch.from_numpy(y_test)
-    y_test_tensor = y_test_tensor.to(device)
+    #y_test_tensor = y_test_tensor.to(device)
 
     outputs = model(x_test_tensor)
     _, predicted = torch.max(outputs.data, 1)
     answer = np.array([np.argmax(i) for i in y_test])
-    predict = predicted.numpy()
+    predict = predicted.cpu().numpy()
 
     acc = np.sum(predict == answer) / len(predict)
     print('Single phone test accuracy: {:.2%}'.format(acc))
