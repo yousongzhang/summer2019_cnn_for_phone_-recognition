@@ -26,7 +26,9 @@ def evalution():
     correct = 0
     total = 0
     x_test_tensor = torch.from_numpy(x_test).float()
+    x_test_tensor = x_test_tensor.to(device)
     y_test_tensor = torch.from_numpy(y_test)
+    y_test_tensor = y_test_tensor.to(device)
 
     outputs = model(x_test_tensor)
     _, predicted = torch.max(outputs.data, 1)
@@ -103,7 +105,7 @@ for epoch in range(num_epochs):
 
 
     # evalution after epoch finished
-    #evalution()
+    evalution()
 
 
 # Save the model checkpoint
