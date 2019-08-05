@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import glob
 import os
-
+import timit
 
 
 
@@ -72,7 +72,7 @@ def stupid_keras_d3_to_d4(data):
 
 
 
-path = "example_timit_data/TEST3"
+path = timit.TIMIT_PATH + "/TEST"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
@@ -83,7 +83,7 @@ for f in files:
     count += 1
 
 
-path = "example_timit_data/TEST3"
+path = timit.TIMIT_PATH + "/TRAIN"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 

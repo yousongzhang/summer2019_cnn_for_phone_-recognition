@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 import torchvision
 import torchvision.transforms as transforms
-import load_data_one_pytorch as load_data
+import load_data_pytorch as load_data
 
 def prepare_data():
     return (np.array(load_data.train_x), np.array(load_data.train_y),
@@ -62,7 +62,7 @@ class ConvNet(nn.Module):
     def forward(self, x):
         out = self.layer1(x)
         out = self.layer2(out)
-        out = self.dropout(out)
+        #out = self.dropout(out)
         out = out.reshape(out.size(0), -1)
         out = self.fc(out)
         out = self.dropout2(out)
