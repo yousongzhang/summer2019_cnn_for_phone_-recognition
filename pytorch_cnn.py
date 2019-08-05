@@ -83,6 +83,7 @@ for epoch in range(num_epochs):
         local_x = x_train[i*batch_size :  (i+1)*batch_size]
         local_y = y_train[i*batch_size :  (i+1)*batch_size]
         images_batch = torch.from_numpy(local_x).float()
+        images_batch = images_batch.to(device)
         labels_batch = torch.from_numpy(local_y)
 
         # Forward pass
