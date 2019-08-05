@@ -85,6 +85,7 @@ for epoch in range(num_epochs):
         images_batch = torch.from_numpy(local_x).float()
         images_batch = images_batch.to(device)
         labels_batch = torch.from_numpy(local_y)
+        labels_batch = labels_batch.to(device)
 
         # Forward pass
         outputs = model(images_batch)
@@ -102,7 +103,7 @@ for epoch in range(num_epochs):
 
 
     # evalution after epoch finished
-    evalution()
+    #evalution()
 
 
 # Save the model checkpoint
