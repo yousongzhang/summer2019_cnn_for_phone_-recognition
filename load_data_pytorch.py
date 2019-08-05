@@ -72,7 +72,7 @@ def stupid_keras_d3_to_d4(data):
 
 
 
-path = timit.TIMIT_PATH + "/TEST"
+path = timit.TIMIT_PATH + "/TRAIN"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
@@ -83,7 +83,7 @@ for f in files:
     count += 1
 
 
-path = timit.TIMIT_PATH + "/TRAIN"
+path = timit.TIMIT_PATH + "/TEST"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
