@@ -83,7 +83,7 @@ for f in files:
     count += 1
 
 
-path = timit.TIMIT_PATH + "/TEST"
+path = "example_timit_data/TEST3"
 pattern = os.path.join(path, "*/*/*.mfcc")
 files = glob.glob(pattern)
 
